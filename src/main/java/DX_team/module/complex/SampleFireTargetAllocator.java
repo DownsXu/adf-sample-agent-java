@@ -1,4 +1,4 @@
-package sample_team.module.complex;
+package DX_team.module.complex;
 
 import adf.core.agent.communication.MessageManager;
 import adf.core.agent.develop.DevelopData;
@@ -12,6 +12,9 @@ import java.util.HashMap;
 import java.util.Map;
 import rescuecore2.worldmodel.EntityID;
 
+/**
+ * 消防员的目标分配器
+ */
 public class SampleFireTargetAllocator extends FireTargetAllocator {
 
   public SampleFireTargetAllocator(AgentInfo ai, WorldInfo wi, ScenarioInfo si, ModuleManager moduleManager, DevelopData developData) {

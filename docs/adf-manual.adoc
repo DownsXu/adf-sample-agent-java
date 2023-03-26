@@ -174,16 +174,16 @@ The modules configuration file `config/module.cfg` indicates which class will be
 .*Listing 1*. Part of a module configuration file
 ----
 ## DefaultTacticsAmbulanceTeam
-DefaultTacticsAmbulanceTeam.HumanDetector : sample_team.module.complex.SampleHumanDetector
-DefaultTacticsAmbulanceTeam.Search : sample_team.module.complex.SampleSearch
+DefaultTacticsAmbulanceTeam.HumanDetector : DX_team.module.complex.SampleHumanDetector
+DefaultTacticsAmbulanceTeam.Search : DX_team.module.complex.SampleSearch
 DefaultTacticsAmbulanceTeam.ExtActionTransport : adf.impl.extaction.DefaultExtActionTransport
 DefaultTacticsAmbulanceTeam.ExtActionMove : adf.impl.extaction.DefaultExtActionMove
 DefaultTacticsAmbulanceTeam.CommandExecutorAmbulance : adf.impl.centralized.DefaultCommandExecutorAmbulance
 DefaultTacticsAmbulanceTeam.CommandExecutorScout : adf.impl.centralized.DefaultCommandExecutorScout
 
 ## DefaultTacticsFireBrigade
-DefaultTacticsFireBrigade.HumanDetector : sample_team.module.complex.SampleHumanDetector
-DefaultTacticsFireBrigade.Search : sample_team.module.complex.SampleSearch
+DefaultTacticsFireBrigade.HumanDetector : DX_team.module.complex.SampleHumanDetector
+DefaultTacticsFireBrigade.Search : DX_team.module.complex.SampleSearch
 DefaultTacticsFireBrigade.ExtActionFireRescue : adf.impl.extaction.DefaultExtActionFireRescue
 DefaultTacticsFireBrigade.ExtActionMove : adf.impl.extaction.DefaultExtActionMove
 DefaultTacticsFireBrigade.CommandExecutorFire : adf.impl.centralized.DefaultCommandExecutorFire
@@ -201,8 +201,8 @@ First, you should copy the Dijkstra path planning (`src/main/java/adf/impl/modul
 [source,shell]
 ----
 $ cd adf-sample-agent-java
-$ mkdir -p src/main/java/sample_team/module/algorithm
-$ cp ../adf-core-java/src/main/java/adf/impl/module/algorithm/DijkstraPathPlanning.java src/main/java/sample_team/module/algorithm/AStarPathPlanning.java
+$ mkdir -p src/main/java/DX_team/module/algorithm
+$ cp ../adf-core-java/src/main/java/adf/impl/module/algorithm/DijkstraPathPlanning.java src/main/java/DX_team/module/algorithm/AStarPathPlanning.java
 ----
 
 [#edit_sample]
@@ -373,7 +373,7 @@ public class DijkstraPathPlanning extends PathPlanning { // Edit this line
 [source,java,linenums]
 .*Listing 3*. `AStartPlanning.java` file
 ----
-package sample_team.module.algorithm; // Position of the file
+package DX_team.module.algorithm; // Position of the file
 
 import adf.core.agent.develop.DevelopData;
 import adf.core.agent.info.AgentInfo;
@@ -383,9 +383,6 @@ import adf.core.agent.module.ModuleManager;
 import adf.core.agent.precompute.PrecomputeData;
 import adf.core.component.module.algorithm.PathPlanning;
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -543,7 +540,7 @@ SampleSearch.Clustering.Police : adf.impl.module.algorithm.KMeansClustering
 .*Listing 7*. Edited `module.cfg`
 ----
 ## SampleSearch
-SampleSearch.PathPlanning.Ambulance : sample_team.module.algorithm.AStarPathPlanning
+SampleSearch.PathPlanning.Ambulance : DX_team.module.algorithm.AStarPathPlanning
 SampleSearch.Clustering.Ambulance : adf.impl.module.algorithm.KMeansClustering
 SampleSearch.PathPlanning.Fire : adf.impl.module.algorithm.AStarPathPlanning
 SampleSearch.Clustering.Fire : adf.impl.module.algorithm.KMeansClustering

@@ -1,4 +1,4 @@
-package sample_team.module.complex;
+package DX_team.module.complex;
 
 import adf.core.agent.communication.MessageManager;
 import adf.core.agent.develop.DevelopData;
@@ -11,6 +11,13 @@ import adf.core.component.module.complex.AmbulanceTargetAllocator;
 import java.util.HashMap;
 import java.util.Map;
 import rescuecore2.worldmodel.EntityID;
+
+
+/**
+ * 救护队的目标分配器
+ *
+ * @author <a href="www.downsxu.top">DownsXu</a>
+ */
 
 public class SampleAmbulanceTargetAllocator extends AmbulanceTargetAllocator {
 

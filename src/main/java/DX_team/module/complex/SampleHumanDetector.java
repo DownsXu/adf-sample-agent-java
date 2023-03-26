@@ -1,4 +1,4 @@
-package sample_team.module.complex;
+package DX_team.module.complex;
 
 import static rescuecore2.standard.entities.StandardEntityURN.AMBULANCE_TEAM;
 import static rescuecore2.standard.entities.StandardEntityURN.CIVILIAN;
@@ -22,6 +22,10 @@ import rescuecore2.standard.entities.Human;
 import rescuecore2.standard.entities.StandardEntity;
 import rescuecore2.standard.entities.StandardEntityURN;
 import rescuecore2.worldmodel.EntityID;
+
+/**
+ * 人类检测器
+ */
 
 public class SampleHumanDetector extends HumanDetector {
 

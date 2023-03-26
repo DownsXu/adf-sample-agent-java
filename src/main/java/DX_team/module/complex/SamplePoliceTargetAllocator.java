@@ -1,4 +1,4 @@
-package sample_team.module.complex;
+package DX_team.module.complex;
 
 import adf.core.agent.communication.MessageManager;
 import adf.core.agent.develop.DevelopData;
@@ -8,10 +8,15 @@ import adf.core.agent.info.WorldInfo;
 import adf.core.agent.module.ModuleManager;
 import adf.core.agent.precompute.PrecomputeData;
 import adf.core.component.module.complex.PoliceTargetAllocator;
-import java.util.HashMap;
-import java.util.Map;
 import rescuecore2.worldmodel.EntityID;
 
+import java.util.HashMap;
+import java.util.Map;
+
+
+/**
+ * 警察的目标分配器
+ */
 public class SamplePoliceTargetAllocator extends PoliceTargetAllocator {
 
   public SamplePoliceTargetAllocator(AgentInfo ai, WorldInfo wi, ScenarioInfo si, ModuleManager moduleManager, DevelopData developData) {

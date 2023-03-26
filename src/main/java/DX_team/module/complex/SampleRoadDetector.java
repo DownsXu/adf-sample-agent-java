@@ -1,4 +1,4 @@
-package sample_team.module.complex;
+package DX_team.module.complex;
 
 import static rescuecore2.standard.entities.StandardEntityURN.AMBULANCE_TEAM;
 import static rescuecore2.standard.entities.StandardEntityURN.CIVILIAN;
@@ -28,6 +28,9 @@ import rescuecore2.standard.entities.StandardEntity;
 import rescuecore2.standard.entities.StandardEntityURN;
 import rescuecore2.worldmodel.EntityID;
 
+/**
+ * 道路检测器
+ */
 public class SampleRoadDetector extends RoadDetector {
 
   private Set<Area> openedAreas = new HashSet<>();

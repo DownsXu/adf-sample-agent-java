@@ -1,4 +1,4 @@
-package sample_team.module.complex;
+package DX_team.module.complex;
 
 import adf.core.agent.communication.MessageManager;
 import adf.core.agent.develop.DevelopData;
@@ -21,6 +21,9 @@ import rescuecore2.standard.entities.StandardEntity;
 import rescuecore2.standard.entities.StandardEntityURN;
 import rescuecore2.worldmodel.EntityID;
 
+/**
+ *建筑物检测器
+ */
 public class SampleBuildingDetector extends BuildingDetector {
 
   private EntityID result;
